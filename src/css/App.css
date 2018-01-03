@@ -1,0 +1,146 @@
+.App {
+  font-family: 'Fredericka the Great', cursive;
+  background-color: #f1f1f1;
+  text-align:center;
+}
+
+.blush {
+  text-decoration: none;
+}
+
+.blush :hover {
+  text-decoration: underline;
+  text-decoration-color: #FEDDE8;
+  -webkit-text-decoration-color: #FEDDE8;
+}
+
+li:hover {
+  text-decoration: underline;
+  text-decoration-color: #FEDDE8;
+  -webkit-text-decoration-color: #FEDDE8;
+}
+
+.navbar {
+  border-bottom: 1px solid lightGrey;
+  text-align: left;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Sacramento', cursive;
+  background-color: 'white';
+  /*background-color: #FEDDE8;*/ pink color
+  color: #5A5959;
+}
+
+i {
+  color: #C7C7C7;
+  font-size: 35px !important;
+  text-align: center !important;
+}
+
+ul {
+    list-style-type: none;
+    /*text-align: right !important;*/
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    color: #656565;
+    /*text-decoration: none !important;*/
+}
+
+p {
+  font-family: 'Sacramento', cursive;
+  font-size: 24px;
+  /*color: #5A5959;*/
+}
+
+input {
+  margin: 10px;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  background-color: white;
+}
+
+.card {
+  display: inline-block !important;
+  position: relative !important;
+  vertical-align: top;
+  width: 21%;
+  min-width: 128px;
+  font-size: 16px;
+}
+
+.card :hover {
+    background-color: #FEDDE8;
+}
+
+i:hover {
+  background-color: #FEDDE8 !important;
+}
+
+.photo {
+  display: inline;
+  text-align: center;
+  padding: 5px;
+  width: 99%;
+  height: auto;
+}
+
+.picture{
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 21%;
+  min-width: 128px;
+  font-size: 16px;
+}
+
+.picture :hover {
+  background-color: #FEDDE8;
+}
+
+.showPhoto {
+  display: inline;
+  text-align: center;
+  padding: 5px;
+  width: 99%;
+  height: auto;
+}
+
+.showCard {
+  display: block;
+  position: center;
+  vertical-align: top;
+  width: 40%;
+  min-width: 128px;
+  font-size: 16px;
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}*/
