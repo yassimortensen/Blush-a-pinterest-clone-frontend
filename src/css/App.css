@@ -1,9 +1,3 @@
-.App {
-  font-family: 'Fredericka the Great', cursive;
-  background-color: #f1f1f1;
-  text-align:center;
-}
-
 .blush {
   text-decoration: none;
 }
@@ -71,11 +65,11 @@ h2 {
 }
 
 .card {
-  display: inline-block !important;
+  /*display: inline-block !important;
   position: relative !important;
   vertical-align: top;
   width: 21%;
-  min-width: 128px;
+  min-width: 128px;*/
   font-size: 16px;
 }
 
@@ -87,12 +81,40 @@ i:hover {
   background-color: #FEDDE8 !important;
 }
 
+.masonry {
+  font-family: 'Fredericka the Great', cursive;
+  background-color: #f1f1f1;
+  text-align: center;
+  column-count: 4;
+  column-gap: 1em;
+  padding: 1em;
+}
+
+.App {
+  font-family: 'Fredericka the Great', cursive;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.load {
+  font-family: 'Fredericka the Great', cursive;
+  background-color: #f1f1f1;
+  text-align:center;
+  padding: 1em;
+}
+
 .photo {
   display: inline;
   text-align: center;
   padding: 5px;
   width: 99%;
   height: auto;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
 }
 
 .picture{

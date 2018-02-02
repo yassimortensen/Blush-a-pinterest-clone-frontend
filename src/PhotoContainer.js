@@ -6,7 +6,7 @@ import Photo from './Photo';
 class PhotoContainer extends React.Component{
   render(){
     const photos = this.props.photos.map(photo =>
-      <div key={photo.url} className='photo'>
+      <div key={photo.url} className='item'>
         <Photo photo={photo} showPicture={this.props.showPicture}/>
       </div>
     )
@@ -18,7 +18,7 @@ class PhotoContainer extends React.Component{
       //   disableImagesLoaded={false} // default false
       //   updateOnEachImageLoad={true} // default false and works only if disableImagesLoaded is false
       //   >
-        <div style={{display: 'inline-block'}} onClick={this.props.handlePhotoClick}>
+        <div onClick={this.props.handlePhotoClick}>
           {photos}
         </div>
       // </Masonry>
