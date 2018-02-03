@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Photo from './Photo';
-// import Masonry from 'react-masonry-component';
 
 class PhotoContainer extends React.Component{
   render(){
@@ -12,16 +10,9 @@ class PhotoContainer extends React.Component{
     )
 
     return(
-      // <Masonry
-      //   className={'App'} // default ''
-      //   elementType={'div'} // default 'div'
-      //   disableImagesLoaded={false} // default false
-      //   updateOnEachImageLoad={true} // default false and works only if disableImagesLoaded is false
-      //   >
         <div onClick={this.props.handlePhotoClick}>
           {photos}
         </div>
-      // </Masonry>
     )
   }
 }

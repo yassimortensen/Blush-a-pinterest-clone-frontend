@@ -108,7 +108,6 @@ class App extends Component {
         <Switch>
           <Route exact path='/search/results' render={() => searchResults}/>
           <Route exact path='/search' render={() => <div><SearchBar listUsers={this.listUsers}/></div>} />
-          ///////////
           <Route exact path='/' render={() => (<div>
             <div className="masonry">
             <PhotoContainer style={{textAlign:"center"}} photos={this.state.photos} showPicture={this.showPicture} /><br />
@@ -118,25 +117,22 @@ class App extends Component {
           <button className="w3-button w3-round-xxlarge w3-white w3-hover-shadow" style={{fontFamily: 'Sacramento', fontSize: '30px', display: 'block', margin: 'auto', backgroundColor: "#f1f1f1"}} onClick={this.handleLoadMore}
             >Load More</button><br />
           </div></div>)}/>
-          /////////
           <Route exact path='/user/:username' render={() => (<div>
             <h1 className="App" style={{margin: '0'}}>{`${this.state.user.name}'s boards`}</h1>
-            <div className="masonry" style={{columnCount: '3'}}>
+            <div className="masonry">
             <BoardContainer user={this.state.user} showBoard={this.showBoard}/><br />
           </div></div>)}/>
           /////////
           <Route exact path='/show/user/:username' render={() => (<div>
             <h1 className="App" style={{margin: '0'}}>{`${this.state.userSearchResults[0].name}'s boards`}</h1>
-            <div className="masonry" style={{columnCount: '2'}}>
+            <div className="masonry">
             <BoardContainer user={this.state.userSearchResults[0]} showBoard={this.showBoard}/><br />
           </div></div>)}/>
-          ////////
           <Route exact path='/show/board/:name' render={() => (<div>
             <h1 className="App" style={{margin: '0'}}>{this.state.board.name}</h1>
             <div className="masonry">
             <PhotoContainer style={{textAlign:"center"}} photos={this.state.board.pics.pics} showPicture={this.showPicture}/><br />
           </div></div>)}/>
-          ///////////
           <Route exact path='/show/photo/:id' render ={() => (<div className='photo'>
             <ShowPhoto style={{textAlign:"center", width: "100px"}} photo={this.state.photo}/>
           </div>)}/>
