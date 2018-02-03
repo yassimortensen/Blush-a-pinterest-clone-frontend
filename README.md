@@ -18,6 +18,8 @@ Blush is a WebApp that makes it easy to find new, professional images to inspire
 
 - All of the dependencies you need to install are in the the package.json file. Run the command `npm install` and `npm start` in your terminal.
 
+- Rails API with seeded data (users and images from UNSPLASH) can be found here: https://github.com/yassimortensen/Blush-a-pinterest-clone
+
 ## AUTHORS ##
 
 - Yassi Mortensen - https://github.com/yassimortensen
