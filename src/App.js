@@ -10,7 +10,6 @@ import LogIn from './LogIn'
 import { Loader } from 'react-loaders'
 import BoardContainer from './BoardContainer'
 import SearchBar from './SearchBar'
-import Photo from './Photo'
 import ShowPhoto from './ShowPhoto'
 
 class App extends Component {
@@ -119,10 +118,9 @@ class App extends Component {
           </div></div>)}/>
           <Route exact path='/user/:username' render={() => (<div>
             <h1 className="App" style={{margin: '0'}}>{`${this.state.user.name}'s boards`}</h1>
-            <div className="masonry">
+            <div className="masonry" style={{columnCount: '3'}}>
             <BoardContainer user={this.state.user} showBoard={this.showBoard}/><br />
           </div></div>)}/>
-          /////////
           <Route exact path='/show/user/:username' render={() => (<div>
             <h1 className="App" style={{margin: '0'}}>{`${this.state.userSearchResults[0].name}'s boards`}</h1>
             <div className="masonry">
